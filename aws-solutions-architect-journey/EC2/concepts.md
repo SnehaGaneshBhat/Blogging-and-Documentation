@@ -54,3 +54,43 @@ Go to EC2 and navigate to **Instances**.
 7. Under Advanced Details, navigate to **User Data** and enter the required code snippet.
 
    This code snippet is generally executed during the first boot of the instance. It can be used to automate initial configurations, install software and run setup commands, making the deployment process easier.
+
+###EC2 Instance Families
+- **General purpose** → balanced workloads.
+   Eg: Hosting a small website or application (e.g., web server).
+- **Compute optimised** → CPU-intensive workloads.
+   Eg: Video encoding, scientific simulations, high-performance computing.
+- **Memory optimised** → memory-intensive databases and analytics.
+   Eg: Large in-memory databases, real-time analytics.
+- **Storage optimised** → high-throughput storage workloads.
+   Eg: Data warehousing, log processing, large-scale databases.
+- **Accelerated computing** → GPUs and specialised processing.
+   Eg: AI/ML model training, 3D rendering, graphics processing.
+
+###EC2 Purchasing Options
+
+1. **On demand instance**:
+   - User can pay for the compute capacity by the second or hour, depending on how long it is used for.
+   - There is no upfront payment or long-term commitment as users can stop and end payment whenever they want.
+   - Tends to be expensive for sustained, long term, predictable usage in comparison to alternate commitment-based discounted purchase.
+
+     Best use case: Short-term, unpredictable workloads, development and testing
+
+2. **Reserved Instances**:
+   - When you need to commit to a particular instance configurations for 1-3 years.
+   - Useful due to discounted usage (upto 72%), unlike on-demand pricing.
+   - Payment options are: no upfront, full upfront and partial upfront.
+   - Standard RI: Greater discount provided, but with lesser flexibility.
+   - Convertible RI: Allows exchange between different instance configurations, but subjected to rules.
+  
+     Best use case: For predictable, steady workflows.
+
+3. **Savings Plan**:
+   - Commit to a specific amount of compute usage per hour ($/hour) for 1-3 years.
+   - Discounts available (up to 72%).
+   - Full upfront, partial upfront or no upfront options available.
+     
+     Type	          |   What it covers
+     ------------------------------------------------------
+Compute Savings Plans |	EC2, Lambda and Fargate. More flexible across instance families, sizes, regions and operating systems.
+EC2 Instance Savings  | Plans	Specific EC2 instance family in a particular AWS region.
