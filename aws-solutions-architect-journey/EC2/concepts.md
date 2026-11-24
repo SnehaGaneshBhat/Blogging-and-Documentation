@@ -55,7 +55,7 @@ Go to EC2 and navigate to **Instances**.
 
    This code snippet is generally executed during the first boot of the instance. It can be used to automate initial configurations, install software and run setup commands, making the deployment process easier.
 
-###EC2 Instance Families
+### EC2 Instance Families
 - **General purpose** → balanced workloads.
    Eg: Hosting a small website or application (e.g., web server).
 - **Compute optimised** → CPU-intensive workloads.
@@ -67,7 +67,7 @@ Go to EC2 and navigate to **Instances**.
 - **Accelerated computing** → GPUs and specialised processing.
    Eg: AI/ML model training, 3D rendering, graphics processing.
 
-###EC2 Purchasing Options
+### EC2 Purchasing Options
 
 1. **On demand instance**:
    - User can pay for the compute capacity by the second or hour, depending on how long it is used for.
@@ -90,7 +90,7 @@ Go to EC2 and navigate to **Instances**.
    - Discounts available (up to 72%).
    - Full upfront, partial upfront or no upfront options available.
      
-     Type	          |   What it covers
-     ------------------------------------------------------
-Compute Savings Plans |	EC2, Lambda and Fargate. More flexible across instance families, sizes, regions and operating systems.
-EC2 Instance Savings  | Plans	Specific EC2 instance family in a particular AWS region.
+    | Type	               |   What it covers                                                                                       |
+    |----------------------|--------------------------------------------------------------------------------------------------------|
+    |Compute Savings Plans |	EC2, Lambda and Fargate. More flexible across instance families, sizes, regions and operating systems.|
+    |EC2 Instance Savings  | Plans	Specific EC2 instance family in a particular AWS region.                                        |
