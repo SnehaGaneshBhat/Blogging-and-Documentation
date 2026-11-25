@@ -90,7 +90,46 @@ Go to EC2 and navigate to **Instances**.
    - Discounts available (up to 72%).
    - Full upfront, partial upfront or no upfront options available.
      
+     
     | Type	               |   What it covers                                                                                       |
     |----------------------|--------------------------------------------------------------------------------------------------------|
     |Compute Savings Plans |	EC2, Lambda and Fargate. More flexible across instance families, sizes, regions and operating systems.|
     |EC2 Instance Savings  | Plans	Specific EC2 instance family in a particular AWS region.                                        |
+
+   Best use case: Consistent compute usage when you need discounts, but want flexibility.
+
+4. **Spot Instances**:
+   - They use spare, unused EC2 capacity.
+   - They offer up to 90% discounts.
+   - AWS can interrupt your instances whenever it needs the capacity back.
+   - Provides a 2-minute interruption notice wherever possible.
+   - Can be used as spot instances individually, or through spot fleets.
+
+     Best use cases: Batch processing, data analysis, ci/cd workloads, fault tolerant applications, workloads that can handle interruptions.
+
+5. **Dedicated hosts**:
+   - A physical EC2 server dedicated to your use entirely.
+   - You get visibility and control over physical server placement and socket/core information.
+   - Supports certain server bound software licensing requirements (e.g. licensing based on physical sockets or cores).
+   - Can be purchased on On-demand or through reservations.
+   - Bring your own license (BOYL).
+
+     Best use case: Compliance requirements and software licensing restrictions.
+
+6. **Dedicated instances**:
+   - EC2 instance running on hardware, used by a single customer.
+   - Other AWS Customers cannot share the underlying hardware.
+   - You don't get the same visibility and control over physical servers like you do in dedicated hosts.
+   - Hardware maybe shared between your won dedicated instances.
+
+     Best use case: Workloads requiring isolation from other AWS customers.
+
+7. **Capacity Reserves**:
+   - Reserve On-Demand EC2 capacity in a specific Availability Zone (AZ).
+   - Ensures that EC2 capacity is available when you launch matching instances.
+   - No long-term commitment is required.
+   - You pay On-Demand rates for the instance whether or not you use it.
+   - Can be combined with Savings plans or Reserved Instance discounts where applicable.
+
+     Best use case: Critical workloads that must compute capacity available in a particular AZ.
+     
