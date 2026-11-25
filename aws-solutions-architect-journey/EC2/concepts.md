@@ -74,7 +74,7 @@ Go to EC2 and navigate to **Instances**.
    - There is no upfront payment or long-term commitment as users can stop and end payment whenever they want.
    - Tends to be expensive for sustained, long term, predictable usage in comparison to alternate commitment-based discounted purchase.
 
-     Best use case: Short-term, unpredictable workloads, development and testing
+     **Best use case**: Short-term, unpredictable workloads, development and testing
 
 2. **Reserved Instances**:
    - When you need to commit to a particular instance configurations for 1-3 years.
@@ -83,7 +83,7 @@ Go to EC2 and navigate to **Instances**.
    - Standard RI: Greater discount provided, but with lesser flexibility.
    - Convertible RI: Allows exchange between different instance configurations, but subjected to rules.
   
-     Best use case: For predictable, steady workflows.
+     **Best use case**: For predictable, steady workflows.
 
 3. **Savings Plan**:
    - Commit to a specific amount of compute usage per hour ($/hour) for 1-3 years.
@@ -96,16 +96,16 @@ Go to EC2 and navigate to **Instances**.
     |Compute Savings Plans |	EC2, Lambda and Fargate. More flexible across instance families, sizes, regions and operating systems.|
     |EC2 Instance Savings  | Plans	Specific EC2 instance family in a particular AWS region.                                        |
 
-   Best use case: Consistent compute usage when you need discounts, but want flexibility.
+   **Best use case**: Consistent compute usage when you need discounts, but want flexibility.
 
 4. **Spot Instances**:
    - They use spare, unused EC2 capacity.
    - They offer up to 90% discounts.
    - AWS can interrupt your instances whenever it needs the capacity back.
    - Provides a 2-minute interruption notice wherever possible.
-   - Can be used as spot instances individually, or through spot fleets.
+   - Can be used as spot instances individually, or through spot fleets with on-demand instances.
 
-     Best use cases: Batch processing, data analysis, ci/cd workloads, fault tolerant applications, workloads that can handle interruptions.
+     **Best use cases**: Batch processing, data analysis, ci/cd workloads, fault tolerant applications, workloads that can handle interruptions.
 
 5. **Dedicated hosts**:
    - A physical EC2 server dedicated to your use entirely.
@@ -114,7 +114,7 @@ Go to EC2 and navigate to **Instances**.
    - Can be purchased on On-demand or through reservations.
    - Bring your own license (BOYL).
 
-     Best use case: Compliance requirements and software licensing restrictions.
+     **Best use case**: Compliance requirements and software licensing restrictions.
 
 6. **Dedicated instances**:
    - EC2 instance running on hardware, used by a single customer.
@@ -122,7 +122,7 @@ Go to EC2 and navigate to **Instances**.
    - You don't get the same visibility and control over physical servers like you do in dedicated hosts.
    - Hardware maybe shared between your won dedicated instances.
 
-     Best use case: Workloads requiring isolation from other AWS customers.
+     **Best use case**: Workloads requiring isolation from other AWS customers.
 
 7. **Capacity Reserves**:
    - Reserve On-Demand EC2 capacity in a specific Availability Zone (AZ).
@@ -131,5 +131,5 @@ Go to EC2 and navigate to **Instances**.
    - You pay On-Demand rates for the instance whether or not you use it.
    - Can be combined with Savings plans or Reserved Instance discounts where applicable.
 
-     Best use case: Critical workloads that must compute capacity available in a particular AZ.
+     **Best use case**: Critical workloads that must compute capacity available in a particular AZ.
      
